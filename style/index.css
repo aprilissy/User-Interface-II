@@ -103,6 +103,7 @@ h1{
 }
 .name_nav{
     padding:1%;
+    widows: 100%;
     border-bottom: dotted .4rem rgb(187, 187, 187);
 }
 .name_nav,.introduction{
@@ -242,7 +243,19 @@ color:rgb(187, 187, 187);
   /* At 800px And below do the following: */
   @media (max-width: 800px) {
     /* Navigation */
-
+    .name_nav h1{
+        font-size: 3rem;  
+        margin-bottom:2%;
+    }
+    .top_directory nav a{
+        width:auto;
+        font-size: 3rem;
+        padding: 2%;
+    }
+    .top_directory nav a:first-child{
+        text-align: center;
+        padding-left: 0;
+    }
     /* End Navigation */
     /* Projects */
     .all_projects {
@@ -264,7 +277,8 @@ color:rgb(187, 187, 187);
     }
     .name_nav{
         padding:1%;
-        border-bottom:none }
+        border-bottom:none 
+    }
     .top_directory nav a{
         display:block;
         width:auto;
