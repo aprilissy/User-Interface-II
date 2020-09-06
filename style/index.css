@@ -1,1 +1,325 @@
-/* Add CSS styling here */
+/* h1 font Pacifico Cursive*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* body font Markazi Text */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+
+/* h2 font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Montserrat&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ******************* CSS Meyer's Reset Above This Line ******************* */
+
+* {
+    box-sizing: border-box;  /*border and padding included in element size calculation, not in addition to. Margin is still not included.*/
+    padding: 0; /*defaults everything to zero*/
+    margin: 0; /*defaults everything to zero*/
+    max-width: 100%; /*won't try to expand outside of its box, can't be bigger than parent*/
+}
+/* 1 rem = 10px instead of 16px browser default. */
+html {
+    font-size:62.5%;
+}
+
+/* ******************* Section above this line is housekeeping ****************** */
+body{
+    font-size: 2rem;
+    font-family: 'Markazi Text', serif;
+}
+
+/* heading */
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color:whitesmoke;
+    padding:1%;
+}
+.top_directory nav a{
+    text-decoration:none; /*removes line under links*/
+    display: inline-block;
+    color: rgb(187, 187, 187);
+    background-color:#04312D;
+    border-radius:1%;
+    width:auto;
+    padding:.2% .4%;
+    text-align:center;
+}
+.top_directory nav a:hover {
+    background-color: rgb(187, 187, 187);
+    color:#04312D;
+  }
+.top_directory nav a:first-child{
+    margin-left: .9%;
+}
+.name_nav{
+    padding:1%;
+    widows: 100%;
+    border-bottom: dotted .4rem rgb(187, 187, 187);
+}
+.name_nav,.introduction{
+    background-color:#04312D ;
+}
+
+/* Introduction */
+.introduction{
+    display:flex;
+    justify-content:flex-start;
+    padding: 2% 2% 2% 2%;
+    align-items: center;
+    color:whitesmoke;
+}
+.intro {
+    display:inline-block;
+    width: 30%;
+    margin-left: 10%;
+    text-align: center;
+}
+.intro_img{
+    display: inline-block;
+    width:50%;
+
+}
+.intro_nav button {
+    color:#04312D ; 
+    background-color: rgb(187, 187, 187);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius:3px;
+    width:auto;
+    padding:1.5% 2%;
+    text-align:center;
+    margin-bottom:5%;
+}
+.intro_nav button:hover {
+    background-color: #04312D;
+    color:rgb(187, 187, 187);
+  }
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color:whitesmoke;
+    padding-bottom:5%;
+    text-align:center;
+}
+.intro p{
+    font-size: 2.5rem;
+    text-align:justify;
+}
+.italics {
+    font-size: larger;
+    color:#29a5a5;
+}
+.one,.two{
+    margin-bottom:3%;
+}
+
+/* Projects */
+.all_projects {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-content:space-evenly;
+    align-items:space-evenly;
+    margin:1.5% 0 1.5% 0;
+}
+.all_projects figure {
+    width: 22%;
+    padding-top:1%;
+}
+.all_projects figcaption {
+    text-align:center;
+}
+
+/* Footer */
+.bottom_directory{
+    text-align:center;
+    padding:1%;
+    background-color:#04312D;
+}
+.bottom_directory button {
+    color:#04312D; 
+    background-color:rgb(187, 187, 187);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius:3px;
+    width:auto;
+    padding:.5%;
+    text-align:center;
+}
+.bottom_directory button:hover {
+    background-color:#04312D;
+    color:rgb(187, 187, 187);
+}
+h3{
+font-size: 3rem;
+margin-bottom:1%;
+color:rgb(187, 187, 187);
+}
+
+/* Responsive Design */
+  /* At 1300px And below do the following: */
+  @media (max-width: 1300px) {
+    /* Introduction */
+    .introduction{
+        flex-wrap: wrap;
+    }
+    .intro_img{
+        display: inline-block;
+        width:auto;
+    }
+    .intro {
+    width: 100%;
+    margin-left: 0;
+    text-align: justify;
+    }
+    h2{
+        text-align:justify;
+        padding-bottom:2%;
+    
+    }
+    .intro_nav button {
+        width:auto;
+        padding:.5% 1%;
+        margin-bottom:2%;
+    }
+    /* End Introduction */
+  }
+  /* At 800px And below do the following: */
+  @media (max-width: 800px) {
+    /* Navigation */
+    .name_nav h1{
+        font-size: 3rem;  
+        margin-bottom:2%;
+    }
+    .top_directory nav a{
+        width:auto;
+        font-size: 3rem;
+        padding: 2%;
+    }
+    .top_directory nav a:first-child{
+        text-align: center;
+        padding-left: 0;
+    }
+    /* End Navigation */
+    /* Projects */
+    .all_projects {
+        margin:3% 0 1.5% 0;
+    }
+    .all_projects figure {
+        width: 44%;
+    }
+
+    /* End Projects */
+  }
+  /* At 500px And below do the following: */
+  @media (max-width: 500px) {
+    /* Navigation */
+    h1{
+        text-align: center;
+        font-size: 5rem;
+        margin:2% 0 10% 0;
+    }
+    .name_nav{
+        padding:1%;
+        border-bottom:none 
+    }
+    .top_directory nav a{
+        display:block;
+        width:auto;
+        margin:2% 30%;
+        text-align:center;
+        font-size: 3rem;
+        padding: 2%;
+    }
+    .top_directory nav a:first-child{
+        margin: 1% 30%;
+        text-align: center;
+    }
+    /* End Navigation */
+    /* Intro */
+    .intro {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        }
+    h2{
+        text-align:center;
+        padding:4%;
+        font-size: 3.5rem;
+    }
+    .intro_nav button {
+        width:auto;
+        padding:2% 4%;
+        margin-bottom:4%;
+    }
+    /* End Intro */
+    /* Footer */
+    .bottom_directory button {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border-radius:3px;
+        width:auto;
+        padding:2% 4%;
+        text-align:center;
+        margin-bottom: 2%;
+        }
+    /* End Footer */
+  }
+/* End Responsive Design */
+
