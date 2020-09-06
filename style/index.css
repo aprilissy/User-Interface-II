@@ -87,40 +87,33 @@ h1{
 .top_directory nav a{
     text-decoration:none; /*removes line under links*/
     display: inline-block;
-    color:#04312D;
-    background-color:rgb(187, 187, 187);
-    border-radius:3px;
-    width:4%;
-    padding:.2%;
+    color: rgb(187, 187, 187);
+    background-color:#04312D;
+    border-radius:1%;
+    width:auto;
+    padding:.2% .4%;
     text-align:center;
 }
 .top_directory nav a:hover {
-    background-color: #04312D;
-    color:rgb(187, 187, 187);
+    background-color: rgb(187, 187, 187);
+    color:#04312D;
   }
 .top_directory nav a:first-child{
     margin-left: .9%;
 }
 .name_nav{
     padding:1%;
-    border-bottom: 3pt rgb(187, 187, 187) dotted;
-
+    border-bottom: dotted .4rem rgb(187, 187, 187);
 }
 .name_nav,.introduction{
     background-color:#04312D ;
 }
+
 /* Introduction */
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
-    color:whitesmoke;
-    padding-bottom:5%;
-    text-align:center;
-}
 .introduction{
     display:flex;
     justify-content:flex-start;
-    padding: 2% 0% 2% 2%;
+    padding: 2% 2% 2% 2%;
     align-items: center;
     color:whitesmoke;
 }
@@ -145,7 +138,7 @@ h2{
     font-weight: bolder;
     border-radius:3px;
     width:auto;
-    padding:1.5%;
+    padding:1.5% 2%;
     text-align:center;
     margin-bottom:5%;
 }
@@ -153,6 +146,13 @@ h2{
     background-color: #04312D;
     color:rgb(187, 187, 187);
   }
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color:whitesmoke;
+    padding-bottom:5%;
+    text-align:center;
+}
 .intro p{
     font-size: 2.5rem;
     text-align:justify;
@@ -174,87 +174,13 @@ h2{
     align-items:space-evenly;
     margin:1.5% 0 1.5% 0;
 }
-.all_projects figure img {   
-    width: 400px;
-    margin-top:5%;
-   }
+.all_projects figure {
+    width: 22%;
+    padding-top:1%;
+}
 .all_projects figcaption {
     text-align:center;
-
 }
-
-/* .all_projects .dog {
-    position: absolute;
-    bottom: -2%;
-    left: 12%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.all_projects .cat {
-    position: absolute;
-    bottom: -2%;
-    right: 36%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.all_projects .bird {
-    position: absolute;
-    bottom: -2%;
-    left: 36%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.all_projects .mouse {
-    position: absolute;
-    bottom: -2%;
-    right: 10.5%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.all_projects .flora {
-    position: absolute;
-    bottom: -45%;
-    left: 12%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.all_projects .fauna {
-    position: absolute;
-    bottom: -45%;
-    right: 36%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.all_projects .fungi {
-    position: absolute;
-    bottom: -45%;
-    left: 36%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.all_projects .monera {
-    position: absolute;
-    bottom:-45%;
-    right: 10.5%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-} */
 
 /* Footer */
 .bottom_directory{
@@ -284,3 +210,102 @@ font-size: 3rem;
 margin-bottom:1%;
 color:rgb(187, 187, 187);
 }
+
+/* Responsive Design */
+  /* At 1300px And below do the following: */
+  @media (max-width: 1300px) {
+    /* Introduction */
+    .introduction{
+        flex-wrap: wrap;
+    }
+    .intro_img{
+        display: inline-block;
+        width:auto;
+    }
+    .intro {
+    width: 100%;
+    margin-left: 0;
+    text-align: justify;
+    }
+    h2{
+        text-align:justify;
+        padding-bottom:2%;
+    
+    }
+    .intro_nav button {
+        width:auto;
+        padding:.5% 1%;
+        margin-bottom:2%;
+    }
+    /* End Introduction */
+  }
+  /* At 800px And below do the following: */
+  @media (max-width: 800px) {
+    /* Navigation */
+
+    /* End Navigation */
+    /* Projects */
+    .all_projects {
+        margin:3% 0 1.5% 0;
+    }
+    .all_projects figure {
+        width: 44%;
+    }
+
+    /* End Projects */
+  }
+  /* At 500px And below do the following: */
+  @media (max-width: 500px) {
+    /* Navigation */
+    h1{
+        text-align: center;
+        font-size: 5rem;
+        margin:2% 0 10% 0;
+    }
+    .name_nav{
+        padding:1%;
+        border-bottom:none }
+    .top_directory nav a{
+        display:block;
+        width:auto;
+        margin:2% 30%;
+        text-align:center;
+        font-size: 3rem;
+        padding: 2%;
+    }
+    .top_directory nav a:first-child{
+        margin: 1% 30%;
+        text-align: center;
+    }
+    /* End Navigation */
+    /* Intro */
+    .intro {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        }
+    h2{
+        text-align:center;
+        padding:4%;
+        font-size: 3.5rem;
+    }
+    .intro_nav button {
+        width:auto;
+        padding:2% 4%;
+        margin-bottom:4%;
+    }
+    /* End Intro */
+    /* Footer */
+    .bottom_directory button {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border-radius:3px;
+        width:auto;
+        padding:2% 4%;
+        text-align:center;
+        margin-bottom: 2%;
+        }
+    /* End Footer */
+  }
+/* End Responsive Design */
+
